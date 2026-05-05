@@ -179,17 +179,19 @@
     flex-direction: column;
   }
   .channel-row {
-    padding: 10px;
-    min-height: 90px;
-    border-bottom: 1px solid #F3F4F6;
+    padding: 12px;
+    min-height: 100px;
+    border-bottom: 2px solid #E5E7EB;
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 8px;
+    overflow: visible;
+    box-sizing: border-box;
   }
   .channel-row:last-child { border-bottom: none; }
-  .channel-row.call-row { background: #FFFBFB; }
-  .channel-row.email-row { background: #FAFBFF; }
-  .channel-row.sms-row { background: #FAFFFE; }
+  .channel-row.call-row { background: #FFF5F5; border-left: 4px solid #FCA5A5; }
+  .channel-row.email-row { background: #EFF6FF; border-left: 4px solid #BFDBFE; }
+  .channel-row.sms-row { background: #F0FDF4; border-left: 4px solid #BBF7D0; }
 
   /* EMPTY cell */
   .empty-cell {
@@ -209,7 +211,10 @@
     cursor: pointer;
     position: relative;
     transition: box-shadow 0.2s, transform 0.15s;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    flex-shrink: 0;
   }
   .card:hover { box-shadow: var(--shadow-hover); transform: translateY(-1px); }
   .card.call { border-left-color: var(--call); }
@@ -534,9 +539,9 @@
   <div style="display:flex; min-width:1200px; overflow-x:auto;">
     <!-- Row Labels -->
     <div style="width:72px; flex-shrink:0; display:flex; flex-direction:column; margin-top:70px;">
-      <div class="row-label call" style="height:90px;">Call</div>
-      <div class="row-label email" style="height:260px;">Email</div>
-      <div class="row-label sms" style="height:180px;">SMS</div>
+      <div class="row-label call" style="min-height:100px;">Call</div>
+      <div class="row-label email" style="min-height:100px;">Email</div>
+      <div class="row-label sms" style="min-height:100px;">SMS</div>
     </div>
 
     <!-- Stage Columns -->
@@ -664,7 +669,7 @@
           </div>
         </div>
         <!-- 68hr - Email (3 cards) -->
-        <div class="channel-row email-row" style="min-height:200px;">
+        <div class="channel-row email-row">
           <div class="card email dashed" onclick="showOverlay('68hr-email-onboard')">
             <div class="card-header">
               <div class="card-icon email">✉️</div>
@@ -739,7 +744,7 @@
           </div>
         </div>
         <!-- 68hr - SMS (3 cards) -->
-        <div class="channel-row sms-row" style="min-height:160px;">
+        <div class="channel-row sms-row">
           <div class="card sms dashed" onclick="showOverlay('68hr-sms-onboard')">
             <div class="card-header">
               <div class="card-icon sms">💬</div>
@@ -918,7 +923,8 @@
               <li>Dogging Day 1 → Gantry Crane (QLD, Wednesday)</li>
               <li>EWP 11m+ Day 1 → EWP Under 11m (all states, VIC coming soon)</li>
               <li>Forklift Day 2 → Upskill, 10% off, speak to trainer</li>
-              <li>Dogging Day 5 (last day) → RB Basic, 10% off today only</li>
+              <li>Dogging Day 3 → RB Basic (specific) + Generic HRW upsell</li>
+              <li>RB, RI, RA, Gantry, C6 Day 3 → Generic HRW upsell (10% off)</li>
               <li>All via aX workflow EDM — Email + SMS per student course</li>
             </ul>
           </div>
@@ -948,16 +954,7 @@
           </div>
         </div>
         <div class="during-cards">
-          <div class="card email dashed" onclick="showOverlay('d1-dogging')">
-            <div class="card-header">
-              <div class="card-icon email">✉️</div>
-              <div class="card-text">
-                <div class="card-title">Dogging → Gantry Crane</div>
-                <div class="card-sub">Upsell Gantry Crane on Wednesday</div>
-              </div>
-            </div>
-            <span class="pill">QLD Only · Wednesday</span>
-          </div>
+          
           <div class="card email dashed" onclick="showOverlay('d1-wp11m')">
             <div class="card-header">
               <div class="card-icon email">✉️</div>
@@ -995,24 +992,86 @@
       <!-- Day 3 -->
       <div class="during-col">
         <div class="during-col-header">
-          <div class="day-badge d3">5</div>
+          <div class="day-badge d3">3</div>
           <div>
-            <div class="day-name">Day 5</div>
-            <div class="day-sub">Last day — book now</div>
+            <div class="day-name">Day 3</div>
+            <div class="day-sub">Upsell & cross-sell</div>
           </div>
         </div>
         <div class="during-cards">
-          <div class="card email dashed" onclick="showOverlay('d3-dogging')">
+          <div class="card email dashed" onclick="showOverlay('d3-dogging-rb')">
             <div class="card-header">
               <div class="card-icon email">✉️</div>
               <div class="card-text">
                 <div class="card-title">Dogging → RB Basic</div>
-                <div class="card-sub">10% off today only — last day</div>
+                <div class="card-sub">10% off — book today</div>
               </div>
             </div>
+            <span class="pill">Dogging Students</span>
+          </div>
+          <div class="card email dashed" onclick="showOverlay('d3-dogging-hrw')">
+            <div class="card-header">
+              <div class="card-icon email">✉️</div>
+              <div class="card-text">
+                <div class="card-title">Dogging — Generic HRW</div>
+                <div class="card-sub">Expand skills — 10% off</div>
+              </div>
+            </div>
+            <span class="pill">Dogging Students</span>
+          </div>
+          <div class="card email dashed" onclick="showOverlay('d3-rigging-basic')">
+            <div class="card-header">
+              <div class="card-icon email">✉️</div>
+              <div class="card-text">
+                <div class="card-title">Rigging Basic — HRW Upsell</div>
+                <div class="card-sub">More tickets — 10% off</div>
+              </div>
+            </div>
+            <span class="pill">RB Students</span>
+          </div>
+          <div class="card email dashed" onclick="showOverlay('d3-rigging-int')">
+            <div class="card-header">
+              <div class="card-icon email">✉️</div>
+              <div class="card-text">
+                <div class="card-title">Rigging Intermediate — HRW Upsell</div>
+                <div class="card-sub">More tickets — 10% off</div>
+              </div>
+            </div>
+            <span class="pill">RI Students</span>
+          </div>
+          <div class="card email dashed" onclick="showOverlay('d3-rigging-adv')">
+            <div class="card-header">
+              <div class="card-icon email">✉️</div>
+              <div class="card-text">
+                <div class="card-title">Rigging Advanced — HRW Upsell</div>
+                <div class="card-sub">More tickets — 10% off</div>
+              </div>
+            </div>
+            <span class="pill">RA Students</span>
+          </div>
+          <div class="card email dashed" onclick="showOverlay('d3-gantry')">
+            <div class="card-header">
+              <div class="card-icon email">✉️</div>
+              <div class="card-text">
+                <div class="card-title">Gantry Crane — HRW Upsell</div>
+                <div class="card-sub">More tickets — 10% off</div>
+              </div>
+            </div>
+            <span class="pill">Gantry Students</span>
+          </div>
+          <div class="card email dashed" onclick="showOverlay('d3-c6')">
+            <div class="card-header">
+              <div class="card-icon email">✉️</div>
+              <div class="card-text">
+                <div class="card-title">C6 Mobile Crane — HRW Upsell</div>
+                <div class="card-sub">More tickets — 10% off</div>
+              </div>
+            </div>
+            <span class="pill">C6 Students</span>
           </div>
         </div>
       </div>
+      
       <!-- VOC -->
       <div class="during-col">
         <div class="during-col-header">
@@ -1347,36 +1406,6 @@ Questions? Call 1300 668 141 or reply to this SMS.`,
       'Remind student to log into portal now and allow 2-4 hours — course starts very soon',
       'Offer support if student is having trouble accessing the portal']
   },
-  'd1-dogging': {
-    type: 'email', stage: 'During Course — Day 1',
-    title: 'Dogging → Gantry Crane',
-    pills: ['QLD Only', 'Wednesday'],
-    showEmailTemplate: false,
-    smsContent: `Hi [First Name], you're doing Dogging — add Gantry Crane this Wednesday while you're here!
-
-Speak to your trainer or book now:
-https://kallibr.com.au/courses/bridge-and-gantry-crane-cb-licence/
-
-Questions? Call 1300 668 141.`,
-    emailSubject: `You're doing Dogging — add Gantry Crane this Wednesday`,
-    emailBody: `Hi [First Name],
-
-You're already doing Dogging — why not add Gantry Crane while you're here?
-
-Gantry Crane is running this Wednesday. It's the perfect opportunity to expand your ticket without taking extra time off work.
-
-Speak to your trainer today to lock it in, or book directly:
-https://kallibr.com.au/courses/bridge-and-gantry-crane-cb-licence/
-
-Kind Regards,
-Kallibr Training Team
-1300 668 141`,
-    bullets: [
-      'Dogging students only — Gantry Crane upsell on Day 1',
-      'QLD only — running Wednesday this week',
-      'Speak to trainer or book direct via course page'
-    ]
-  },
   'd1-wp11m': {
     type: 'email', stage: 'During Course — Day 1',
     title: 'EWP Over 11m → EWP Under 11m',
@@ -1443,37 +1472,229 @@ Kallibr Training Team
       'More tickets mean more opportunities on the job site'
     ]
   },
-  'd3-dogging': {
-    type: 'email', stage: 'During Course — Day 5',
+  'd3-dogging-rb': {
+    type: 'email', stage: 'During Course — Day 3',
     title: 'Dogging → RB Basic',
-    pills: ['Dogging Students', 'Day 5 — Last Day', '10% Off Today Only'],
+    pills: ['Dogging Students', '10% Off Today'],
     showEmailTemplate: false,
-    smsContent: `Hi [First Name], congrats on finishing Day 5 of Dogging! Book RB Basic today before you go and get 10% off. Today only!
+    smsContent: `Hi [First Name], you're doing Dogging — the perfect next step is Rigging Basic (RB Licence). Book today and get 10% off!
 
 Speak to your trainer or book now:
 https://kallibr.com.au/courses/basic-rigging-rb-licence/
 
 Questions? Call 1300 668 141.`,
-    emailSubject: `Last day — book RB Basic today and save 10%`,
+    emailSubject: `You're doing Dogging — add Rigging Basic and save 10%`,
     emailBody: `Hi [First Name],
 
-It's your last day of Dogging — congratulations on completing your 5-day course!
+You're doing Dogging — the perfect next step is Rigging Basic (RB Licence).
 
-Before you go, lock in your next course and save. Book Rigging Basic (RB) today and get 10% off.
+RB expands your dogging skills and qualifies you for more complex rigging tasks including hoists, safety lines, steel erections and precast members. More tickets mean more opportunities on the job site.
 
-RB Licence is the perfect next step after Dogging. It expands your skills and opens up more opportunities on the job site.
-
-This offer is only available if you book today.
-
-Speak to your trainer to lock it in, or book directly:
+Book today and get 10% off — speak to your trainer or book directly:
 https://kallibr.com.au/courses/basic-rigging-rb-licence/
+
+Questions? Call 1300 668 141.
 
 Kind Regards,
 Kallibr Training Team
 1300 668 141`,
-    bullets: ['Dogging students only — Day 5 (last day of 5-day course)',
-      'RB Basic promo — 10% off if booked today before leaving',
-      'Perfect next step after Dogging — expands skills and job opportunities']
+    bullets: [
+      'Dogging students only — promote RB Basic on Day 3',
+      'RB expands dogging skills — hoists, safety lines, steel erections',
+      '10% off when booked today — speak to trainer or book direct'
+    ]
+  },
+  'd3-dogging-hrw': {
+    type: 'email', stage: 'During Course — Day 3',
+    title: 'Dogging — Generic HRW Upsell',
+    pills: ['Dogging Students'],
+    showEmailTemplate: false,
+    smsContent: `Hi [First Name], looking to get more HRW tickets? Ask your trainer today — 10% off when you book now!
+
+Call 1300 668 141 or view courses here:
+https://kallibr.com.au/courses/`,
+    emailSubject: `You're doing Dogging — looking to expand your HRW skills?`,
+    emailBody: `Hi [First Name],
+
+You're already here — it's the perfect time to expand your skills.
+
+Looking to get more High Risk Work Licence tickets? Ask your trainer today about adding another course. You'll get 10% off when you book during your current course.
+
+More tickets mean more opportunities on the job site.
+
+View all available courses and book directly:
+https://kallibr.com.au/courses/
+
+Or call us on 1300 668 141.
+
+Kind Regards,
+Kallibr Training Team
+1300 668 141`,
+    bullets: [
+      'Dogging students — generic HRW upsell on Day 3',
+      '10% off any additional course booked today',
+      'View all courses at kallibr.com.au/courses/'
+    ]
+  },
+  'd3-rigging-basic': {
+    type: 'email', stage: 'During Course — Day 3',
+    title: 'Rigging Basic — HRW Upsell',
+    pills: ['Rigging Basic Students'],
+    showEmailTemplate: false,
+    smsContent: `Hi [First Name], looking to get more HRW tickets? Ask your trainer today — 10% off when you book now!
+
+Call 1300 668 141 or view courses here:
+https://kallibr.com.au/courses/`,
+    emailSubject: `You're doing Rigging Basic — looking to get more HRW tickets?`,
+    emailBody: `Hi [First Name],
+
+You're already here — it's the perfect time to expand your skills.
+
+Looking to get more High Risk Work Licence tickets? Ask your trainer today about adding another course. You'll get 10% off when you book during your current course.
+
+More tickets mean more opportunities on the job site.
+
+View all available courses and book directly:
+https://kallibr.com.au/courses/
+
+Or call us on 1300 668 141.
+
+Kind Regards,
+Kallibr Training Team
+1300 668 141`,
+    bullets: [
+      'Rigging Basic students — generic HRW upsell on Day 3',
+      '10% off any additional course booked today',
+      'View all courses at kallibr.com.au/courses/'
+    ]
+  },
+  'd3-rigging-int': {
+    type: 'email', stage: 'During Course — Day 3',
+    title: 'Rigging Intermediate — HRW Upsell',
+    pills: ['Rigging Intermediate Students'],
+    showEmailTemplate: false,
+    smsContent: `Hi [First Name], looking to get more HRW tickets? Ask your trainer today — 10% off when you book now!
+
+Call 1300 668 141 or view courses here:
+https://kallibr.com.au/courses/`,
+    emailSubject: `You're doing Rigging Intermediate — looking to get more HRW tickets?`,
+    emailBody: `Hi [First Name],
+
+You're already here — it's the perfect time to expand your skills.
+
+Looking to get more High Risk Work Licence tickets? Ask your trainer today about adding another course. You'll get 10% off when you book during your current course.
+
+More tickets mean more opportunities on the job site.
+
+View all available courses and book directly:
+https://kallibr.com.au/courses/
+
+Or call us on 1300 668 141.
+
+Kind Regards,
+Kallibr Training Team
+1300 668 141`,
+    bullets: [
+      'Rigging Intermediate students — generic HRW upsell on Day 3',
+      '10% off any additional course booked today',
+      'View all courses at kallibr.com.au/courses/'
+    ]
+  },
+  'd3-rigging-adv': {
+    type: 'email', stage: 'During Course — Day 3',
+    title: 'Rigging Advanced — HRW Upsell',
+    pills: ['Rigging Advanced Students'],
+    showEmailTemplate: false,
+    smsContent: `Hi [First Name], looking to get more HRW tickets? Ask your trainer today — 10% off when you book now!
+
+Call 1300 668 141 or view courses here:
+https://kallibr.com.au/courses/`,
+    emailSubject: `You're doing Rigging Advanced — looking to get more HRW tickets?`,
+    emailBody: `Hi [First Name],
+
+You're already here — it's the perfect time to expand your skills.
+
+Looking to get more High Risk Work Licence tickets? Ask your trainer today about adding another course. You'll get 10% off when you book during your current course.
+
+More tickets mean more opportunities on the job site.
+
+View all available courses and book directly:
+https://kallibr.com.au/courses/
+
+Or call us on 1300 668 141.
+
+Kind Regards,
+Kallibr Training Team
+1300 668 141`,
+    bullets: [
+      'Rigging Advanced students — generic HRW upsell on Day 3',
+      '10% off any additional course booked today',
+      'View all courses at kallibr.com.au/courses/'
+    ]
+  },
+  'd3-gantry': {
+    type: 'email', stage: 'During Course — Day 3',
+    title: 'Gantry Crane — HRW Upsell',
+    pills: ['Gantry Crane Students'],
+    showEmailTemplate: false,
+    smsContent: `Hi [First Name], looking to get more HRW tickets? Ask your trainer today — 10% off when you book now!
+
+Call 1300 668 141 or view courses here:
+https://kallibr.com.au/courses/`,
+    emailSubject: `You're doing Gantry Crane — looking to get more HRW tickets?`,
+    emailBody: `Hi [First Name],
+
+You're already here — it's the perfect time to expand your skills.
+
+Looking to get more High Risk Work Licence tickets? Ask your trainer today about adding another course. You'll get 10% off when you book during your current course.
+
+More tickets mean more opportunities on the job site.
+
+View all available courses and book directly:
+https://kallibr.com.au/courses/
+
+Or call us on 1300 668 141.
+
+Kind Regards,
+Kallibr Training Team
+1300 668 141`,
+    bullets: [
+      'Gantry Crane students — generic HRW upsell on Day 3',
+      '10% off any additional course booked today',
+      'View all courses at kallibr.com.au/courses/'
+    ]
+  },
+  'd3-c6': {
+    type: 'email', stage: 'During Course — Day 3',
+    title: 'C6 Mobile Crane — HRW Upsell',
+    pills: ['C6 Mobile Crane Students'],
+    showEmailTemplate: false,
+    smsContent: `Hi [First Name], looking to get more HRW tickets? Ask your trainer today — 10% off when you book now!
+
+Call 1300 668 141 or view courses here:
+https://kallibr.com.au/courses/`,
+    emailSubject: `You're doing C6 Mobile Crane — looking to get more HRW tickets?`,
+    emailBody: `Hi [First Name],
+
+You're already here — it's the perfect time to expand your skills.
+
+Looking to get more High Risk Work Licence tickets? Ask your trainer today about adding another course. You'll get 10% off when you book during your current course.
+
+More tickets mean more opportunities on the job site.
+
+View all available courses and book directly:
+https://kallibr.com.au/courses/
+
+Or call us on 1300 668 141.
+
+Kind Regards,
+Kallibr Training Team
+1300 668 141`,
+    bullets: [
+      'C6 Mobile Crane students — generic HRW upsell on Day 3',
+      '10% off any additional course booked today',
+      'View all courses at kallibr.com.au/courses/'
+    ]
   },
   'voc': {
     type: 'sms', stage: 'VOC & Completion',
