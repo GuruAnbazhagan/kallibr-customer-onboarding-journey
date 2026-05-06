@@ -668,7 +668,7 @@
             </div>
           </div>
         </div>
-        <!-- 68hr - Email (3 cards) -->
+        <!-- 68hr - Email (4 cards) -->
         <div class="channel-row email-row">
           <div class="card email dashed" onclick="showOverlay('68hr-email-onboard')">
             <div class="card-header">
@@ -685,17 +685,27 @@
               <div class="card-icon email">✉️</div>
               <div class="card-text">
                 <div class="card-title">Pre-learning Email</div>
-                <div class="card-sub">Complete modules before Day 1</div>
+                <div class="card-sub">Stream 2A — mandatory pre-learning</div>
               </div>
             </div>
-            <span class="pill">Forklift / EWP</span>
+            <span class="pill">Forklift / EWP Only</span>
+          </div>
+          <div class="card email dashed" onclick="showOverlay('68hr-email-prepb')">
+            <div class="card-header">
+              <div class="card-icon email">✉️</div>
+              <div class="card-text">
+                <div class="card-title">General Course Prep</div>
+                <div class="card-sub">Stream 2B — all other courses</div>
+              </div>
+            </div>
+            <span class="pill">All Other Courses</span>
           </div>
           <div class="card email dashed" onclick="showOverlay('68hr-email-invoice')">
             <div class="card-header">
               <div class="card-icon email">✉️</div>
               <div class="card-text">
                 <div class="card-title">Invoice Reminder</div>
-                <div class="card-sub">Payment due · link included</div>
+                <div class="card-sub">Check email for invoice</div>
               </div>
             </div>
             <span class="pill">COD Only</span>
@@ -743,7 +753,7 @@
             </div>
           </div>
         </div>
-        <!-- 68hr - SMS (3 cards) -->
+        <!-- 68hr - SMS (4 cards) -->
         <div class="channel-row sms-row">
           <div class="card sms dashed" onclick="showOverlay('68hr-sms-onboard')">
             <div class="card-header">
@@ -760,17 +770,27 @@
               <div class="card-icon sms">💬</div>
               <div class="card-text">
                 <div class="card-title">Pre-learning SMS</div>
-                <div class="card-sub">Pre-learning reminder</div>
+                <div class="card-sub">Stream 2A — mandatory pre-learning</div>
               </div>
             </div>
-            <span class="pill">Forklift / EWP</span>
+            <span class="pill">Forklift / EWP Only</span>
+          </div>
+          <div class="card sms dashed" onclick="showOverlay('68hr-sms-prepb')">
+            <div class="card-header">
+              <div class="card-icon sms">💬</div>
+              <div class="card-text">
+                <div class="card-title">General Course Prep SMS</div>
+                <div class="card-sub">Stream 2B — all other courses</div>
+              </div>
+            </div>
+            <span class="pill">All Other Courses</span>
           </div>
           <div class="card sms dashed" onclick="showOverlay('68hr-sms-invoice')">
             <div class="card-header">
               <div class="card-icon sms">💬</div>
               <div class="card-text">
                 <div class="card-title">Invoice Reminder SMS</div>
-                <div class="card-sub">Payment due · pay now via link</div>
+                <div class="card-sub">Check email for invoice</div>
               </div>
             </div>
             <span class="pill">COD Only</span>
@@ -845,34 +865,30 @@
         <div class="script-strip">
           <div class="script-strip-label">📋 Script Focus</div>
           <div class="script-channel">
-            <div class="script-channel-label email">✉️ Email — Not yet onboarded</div>
+            <div class="script-channel-label email">✉️ Stream 1 — Not yet onboarded</div>
             <ul>
-              <li>Haven't logged in yet — do it now</li>
-              <li>Course starts soon — details waiting inside portal</li>
-              <li>Need help? Call 1300 668 141</li>
+              <li>Must log in now — course starts very soon</li>
+              <li>Need help? We will walk you through it</li>
             </ul>
           </div>
           <div class="script-channel">
-            <div class="script-channel-label email">✉️ Email — Pre-learning (Forklift/EWP)</div>
+            <div class="script-channel-label email">✉️ Stream 2A — Pre-learning (Forklift/EWP only)</div>
             <ul>
-              <li>Action required: complete pre-learning before Day 1</li>
-              <li>Allow 2–4 hours in aX Learner Portal</li>
-              <li>Must be done before course start — don't leave it late</li>
+              <li>Mandatory — will NOT receive completion without it</li>
+              <li>Allow 2–4 hours in Learner Portal — do not leave to night before</li>
             </ul>
           </div>
           <div class="script-channel">
-            <div class="script-channel-label email">✉️ Email — COD Invoice</div>
+            <div class="script-channel-label email">✉️ Stream 2B — General prep (all other courses)</div>
             <ul>
-              <li>Invoice is due — pay before course starts</li>
-              <li>Payment link enclosed — quick online payment</li>
-              <li>Spot confirmed once payment received</li>
+              <li>Are you ready for Day 1? Logged in? Know location? Know what to bring?</li>
             </ul>
           </div>
           <div class="script-channel">
-            <div class="script-channel-label sms">💬 SMS — mirrors all 3 email streams</div>
+            <div class="script-channel-label email">✉️ Stream 3 — COD Invoice</div>
             <ul>
-              <li>Late onboarding nudge / pre-learning reminder</li>
-              <li>COD invoice with payment link</li>
+              <li>Check email for invoice — complete payment to secure place</li>
+              <li>No payment link in SMS — check email</li>
             </ul>
           </div>
         </div>
@@ -965,6 +981,16 @@
             </div>
             <span class="pill">EWP 11m+ Students</span>
           </div>
+          <div class="card email dashed" onclick="showOverlay('d1-wah')">
+            <div class="card-header">
+              <div class="card-icon email">✉️</div>
+              <div class="card-text">
+                <div class="card-title">WAH Ticket Check</div>
+                <div class="card-sub">Is your WAH current?</div>
+              </div>
+            </div>
+            <span class="pill">Rigging Basic Students</span>
+          </div>
 
         </div>
       </div>
@@ -982,10 +1008,11 @@
             <div class="card-header">
               <div class="card-icon email">✉️</div>
               <div class="card-text">
-                <div class="card-title">Forklift Upskill</div>
-                <div class="card-sub">Ask your trainer — 10% off today</div>
+                <div class="card-title">Forklift — Generic HRW Upsell</div>
+                <div class="card-sub">10% off today</div>
               </div>
             </div>
+            <span class="pill">Forklift Students</span>
           </div>
         </div>
       </div>
@@ -1005,16 +1032,6 @@
               <div class="card-text">
                 <div class="card-title">Dogging → RB Basic</div>
                 <div class="card-sub">10% off — book today</div>
-              </div>
-            </div>
-            <span class="pill">Dogging Students</span>
-          </div>
-          <div class="card email dashed" onclick="showOverlay('d3-dogging-hrw')">
-            <div class="card-header">
-              <div class="card-icon email">✉️</div>
-              <div class="card-text">
-                <div class="card-title">Dogging — Generic HRW</div>
-                <div class="card-sub">Expand skills — 10% off</div>
               </div>
             </div>
             <span class="pill">Dogging Students</span>
@@ -1049,16 +1066,6 @@
             </div>
             <span class="pill">RA Students</span>
           </div>
-          <div class="card email dashed" onclick="showOverlay('d3-gantry')">
-            <div class="card-header">
-              <div class="card-icon email">✉️</div>
-              <div class="card-text">
-                <div class="card-title">Gantry Crane — HRW Upsell</div>
-                <div class="card-sub">More tickets — 10% off</div>
-              </div>
-            </div>
-            <span class="pill">Gantry Students</span>
-          </div>
           <div class="card email dashed" onclick="showOverlay('d3-c6')">
             <div class="card-header">
               <div class="card-icon email">✉️</div>
@@ -1072,28 +1079,6 @@
         </div>
       </div>
       
-      <!-- VOC -->
-      <div class="during-col">
-        <div class="during-col-header">
-          <div class="day-badge voc">✓</div>
-          <div>
-            <div class="day-name">VOC & Completion</div>
-            <div class="day-sub">Day before last course day</div>
-          </div>
-        </div>
-        <div class="during-cards">
-          <div class="card sms dashed" onclick="showOverlay('voc')">
-            <div class="card-header">
-              <div class="card-icon sms">💬</div>
-              <div class="card-text">
-                <div class="card-title">VOC Check</div>
-                <div class="card-sub">SMS + Portal Announcement</div>
-              </div>
-            </div>
-            <span class="pill">Day before last course day</span>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </div>
@@ -1109,10 +1094,11 @@
 
 <script>
 const scripts = {
+
   'booking-call': {
     type: 'call', stage: 'At Booking',
     title: 'Booking Confirmation Call',
-    pills: [],
+    pills: ['All Students'],
     showEmailTemplate: false,
     bullets: [
       'Confirm booking details — course name, date and location',
@@ -1121,6 +1107,7 @@ const scripts = {
       'Ask if the student needs any assistance to get started'
     ]
   },
+
   'booking-email': {
     type: 'email', stage: 'At Booking',
     title: 'Booking Confirmation Email',
@@ -1129,59 +1116,53 @@ const scripts = {
     emailSubject: `Your Kallibr Training booking is confirmed — action required`,
     emailBody: `Hi [First Name],
 
-Thank you for choosing Kallibr Training. Your booking is confirmed.
+Your booking is confirmed.
 
 IMPORTANT: You must log into your Learner Portal before your course.
 
 Your Learner Portal is where you will find everything you need to prepare:
 • Course details and schedule
 • What to bring on the day
-• Pre-learning modules assigned to your course — you must complete these to receive your completion
 • Onboarding steps — you must complete these before Day 1
-
-PLEASE NOTE: Pre-learning is mandatory. You will not receive your course completion unless pre-learning is finished before Day 1.
 
 You must onboard for every course you enrol in, even if you have used the portal before.
 
 Login here: [User Login Access Link Text]
 
-Your course details:
+Course details:
   Course:     [Workshop Name]
   Date:       [Complex Date]
   Start time: [Complex Date Start Time]
-  Location:   [Workshop Venue Organisation]
-              [Workshop Venue Street Address]
-              [Workshop Venue Suburb], [State] [Postcode]
-
-If you have any questions, please contact us.
+  Location:   [Workshop Venue Organisation], [Street Address], [Suburb], [State] [Postcode]
 
 Kind Regards,
 Kallibr Customer Service Team
-customerservice@kallibr.com.au
-1300 668 141`,
-    bullets: ['Booking confirmed — portal login is mandatory before course',
-      'Pre-learning is mandatory — student will not receive completion without it',
+customerservice@kallibr.com.au | 1300 668 141`,
+    bullets: [
+      'Booking confirmed — portal login is mandatory before course',
       'Must onboard for every course — even returning students',
-      'Course details, dates and location included']
+      'Course details, dates and location included',
+      'No pre-learning mention — generic for all students'
+    ]
   },
+
   'booking-sms': {
     type: 'sms', stage: 'At Booking',
     title: 'Immediate SMS',
     pills: ['All Students'],
     showEmailTemplate: false,
-    smsContent: `Hi [First Name], thanks for booking with Kallibr Training!
+    smsContent: `Hi [First Name], thanks for booking with Kallibr Training! You must log into your Learner Portal to access your course details and complete your pre-course steps before Day 1.
 
-You must log into your Learner Portal to access your course details and complete your pre-course steps before Day 1.
-
-Login: https://kallibr.app.axcelerate.com/management/management2/rto/[User Login Access Link]
+Login: [User Login Access Link Text]
 
 Need help? Call 1300 668 141 or reply to this SMS.`,
     bullets: [
-      'Thanks for booking — must log into Learner Portal before Day 1',
-      'Portal login is mandatory — course details and pre-course steps inside',
-      'Need help? Call 1300 668 141 or reply to SMS'
+      'Must log into Learner Portal before Day 1',
+      'Portal login link included',
+      'Need help? Call 1300 668 141 or reply'
     ]
   },
+
   '3day-email': {
     type: 'email', stage: '3 Days After Booking',
     title: 'Onboarding Nudge Email',
@@ -1195,24 +1176,24 @@ Just checking in — have you logged into your Kallibr Learner Portal yet?
 You must log in before your course starts to:
 • Confirm your personal details
 • Review your course requirements and what to bring
-• Complete any pre-learning modules assigned to your course
+• Check any course notes from your trainer
 
-This is sent to all students — if you have already logged in, you're all set. Thank you!
+This is sent to all students — if you have already logged in, you're all set!
 
-Login here: https://kallibr.app.axcelerate.com/management/management2/rto/[User Login Access Link]
+Login here: [User Login Access Link Text]
 
-If you need any assistance, call us or reply to this email.
+Need help? Call 1300 668 141 or reply to this email.
 
 Kind Regards,
 Kallibr Customer Service Team
-customerservice@kallibr.com.au
-1300 668 141`,
+customerservice@kallibr.com.au | 1300 668 141`,
     bullets: [
       'Have you logged into your Kallibr Learner Portal yet?',
-      'Must log in to confirm details, review requirements and complete pre-learning',
+      'Must log in to confirm details, review requirements',
       'Sent to all students — those already logged in can disregard'
     ]
   },
+
   '3day-sms': {
     type: 'sms', stage: '3 Days After Booking',
     title: 'Prep Reminder SMS',
@@ -1220,7 +1201,7 @@ customerservice@kallibr.com.au
     showEmailTemplate: false,
     smsContent: `Hi [First Name], reminder — you must log into your Kallibr Learner Portal before your course starts.
 
-Login: https://kallibr.app.axcelerate.com/management/management2/rto/[User Login Access Link]
+Login: [User Login Access Link Text]
 
 Having trouble? Call 1300 668 141 or reply to this SMS.`,
     bullets: [
@@ -1228,6 +1209,7 @@ Having trouble? Call 1300 668 141 or reply to this SMS.`,
       'Having trouble? Call 1300 668 141 or reply to SMS'
     ]
   },
+
   '68hr-email-onboard': {
     type: 'email', stage: '68 Hours Before Course',
     title: 'Late Onboarding Nudge',
@@ -1236,7 +1218,7 @@ Having trouble? Call 1300 668 141 or reply to this SMS.`,
     emailSubject: `Action required — you must log into your Learner Portal before your course`,
     emailBody: `Hi [First Name],
 
-Your course with Kallibr Training is coming up soon and our records show you have not yet logged into your Learner Portal.
+Your course is coming up soon and our records show you have not yet logged into your Learner Portal.
 
 You must log in now to:
 • Access your course details and confirm what to bring
@@ -1245,51 +1227,131 @@ You must log in now to:
 
 Please do this as soon as possible — your course starts very soon.
 
-Login here: https://kallibr.app.axcelerate.com/management/management2/rto/[User Login Access Link]
+Login here: [User Login Access Link Text]
 
 Need help logging in? Call us and we will walk you through it.
 
 Kind Regards,
 Kallibr Customer Service Team
-customerservice@kallibr.com.au
-1300 668 141`,
+customerservice@kallibr.com.au | 1300 668 141`,
     bullets: [
       'Records show student has not yet logged into Learner Portal',
       'Must log in now — course starts very soon',
       'Need help? Call us and we will walk you through it'
     ]
   },
+
+  '68hr-sms-onboard': {
+    type: 'sms', stage: '68 Hours Before Course',
+    title: 'Late Onboarding Nudge SMS',
+    pills: ['Not yet onboarded'],
+    showEmailTemplate: false,
+    smsContent: `Hi [First Name], your Kallibr course starts soon and we can see you haven't logged into your Learner Portal yet. You must log in now.
+
+Login: [User Login Access Link Text]
+
+Need help? Call 1300 668 141 or reply to this SMS.`,
+    bullets: [
+      'Course starts soon — student has not yet logged into portal',
+      'Must log in now',
+      'Need help? Call 1300 668 141 or reply'
+    ]
+  },
+
   '68hr-email-prelearn': {
     type: 'email', stage: '68 Hours Before Course',
     title: 'Pre-learning Email',
-    pills: ['Forklift / EWP'],
+    pills: ['Forklift / EWP Only'],
     showEmailTemplate: false,
-    emailSubject: `Mandatory: You must complete your pre-learning before Day 1 to receive your completion`,
+    emailSubject: `Mandatory — complete your pre-learning before Day 1 to receive your completion`,
     emailBody: `Hi [First Name],
 
 IMPORTANT: Pre-learning is mandatory for your course. You will not receive your course completion unless pre-learning is finished before Day 1.
 
-Please log into your Learner Portal now and allow 2 to 4 hours to complete your modules before your course starts.
+Log into your Learner Portal now and allow 2 to 4 hours to complete your modules before your course starts.
 
-Login here: https://kallibr.app.axcelerate.com/management/management2/rto/[User Login Access Link]
+Login here: [User Login Access Link Text]
 
 Why does pre-learning matter?
 • It is a mandatory requirement for your course completion
 • Students who complete pre-learning arrive more confident and perform better in assessment
 • Incomplete pre-learning means you cannot be issued your completion certificate
 
-Please do not leave this to the night before your course. Give yourself enough time to complete it properly.
-
-If you have any questions, call us or reply to this email.
+Do not leave this to the night before your course.
 
 Kind Regards,
 Kallibr Customer Service Team
-customerservice@kallibr.com.au
-1300 668 141`,
-    bullets: ['MANDATORY: Pre-learning must be completed before Day 1 to receive course completion',
+customerservice@kallibr.com.au | 1300 668 141`,
+    bullets: [
+      'MANDATORY: Pre-learning must be completed before Day 1 to receive course completion',
       'Allow 2 to 4 hours — log into Learner Portal now',
-      'Incomplete pre-learning means no completion certificate — do not leave to night before']
+      'Incomplete pre-learning means no completion certificate'
+    ]
   },
+
+  '68hr-sms-prelearn': {
+    type: 'sms', stage: '68 Hours Before Course',
+    title: 'Pre-learning SMS',
+    pills: ['Forklift / EWP Only'],
+    showEmailTemplate: false,
+    smsContent: `Hi [First Name], urgent — pre-learning is mandatory for your Kallibr course. You will NOT receive your completion without it.
+
+Allow 2-4 hours and complete your modules now.
+
+Login: [User Login Access Link Text]
+
+Questions? Call 1300 668 141 or reply to this SMS.`,
+    bullets: [
+      'Pre-learning mandatory — will NOT receive completion without it',
+      'Allow 2-4 hours — complete modules now',
+      'Questions? Call 1300 668 141 or reply'
+    ]
+  },
+
+  '68hr-email-prepb': {
+    type: 'email', stage: '68 Hours Before Course',
+    title: 'General Course Prep Email',
+    pills: ['All Other Courses'],
+    showEmailTemplate: false,
+    emailSubject: `Your course is coming up — are you ready for Day 1?`,
+    emailBody: `Hi [First Name],
+
+Your course with Kallibr Training is coming up soon. Here's a quick checklist to make sure you're ready:
+
+• Logged into your Learner Portal? [User Login Access Link Text]
+• Know where you're going? Check your course location in your portal
+• Know what to bring? It's listed in your portal
+
+If you have any questions, call us on 1300 668 141 or reply to this email.
+
+Kind Regards,
+Kallibr Customer Service Team
+customerservice@kallibr.com.au | 1300 668 141`,
+    bullets: [
+      'General prep checklist — all courses without pre-learning',
+      'Logged in? Know location? Know what to bring?',
+      'Portal link and support number included'
+    ]
+  },
+
+  '68hr-sms-prepb': {
+    type: 'sms', stage: '68 Hours Before Course',
+    title: 'General Course Prep SMS',
+    pills: ['All Other Courses'],
+    showEmailTemplate: false,
+    smsContent: `Hi [First Name], your Kallibr course is coming up soon — are you ready for Day 1?
+
+Check your portal for location and what to bring.
+Login: [User Login Access Link Text]
+
+Call 1300 668 141 if you need help.`,
+    bullets: [
+      'General course prep — all courses without pre-learning',
+      'Check portal for location and what to bring',
+      'Call 1300 668 141 if needed'
+    ]
+  },
+
   '68hr-email-invoice': {
     type: 'email', stage: '68 Hours Before Course',
     title: 'Invoice Reminder',
@@ -1300,78 +1362,39 @@ customerservice@kallibr.com.au
 
 This is a reminder that your Kallibr Training invoice is due before your course start date.
 
-Please complete your payment using the link below to secure your place:
+Please check your email for the invoice and complete payment to secure your place.
 
-Pay now: [Payment Link]
-
-Your place in the course will be confirmed once payment is received. If payment is not received before your course start date, we may need to reschedule your booking.
+Your place will be confirmed once payment is received. If payment is not received before your course start date, we may need to reschedule your booking.
 
 If you have already paid, please disregard this email.
 
-For questions about your invoice, call us or reply to this email.
+For questions about your invoice, call us on 1300 668 141 or reply to this email.
 
 Kind Regards,
 Kallibr Customer Service Team
-customerservice@kallibr.com.au
-1300 668 141`,
+customerservice@kallibr.com.au | 1300 668 141`,
     bullets: [
       'Invoice due before course start date',
-      'Pay now via link to secure place — spot confirmed once payment received',
-      'If already paid, disregard this email'
+      'Check email for invoice — complete payment to secure place',
+      'If already paid, disregard'
     ]
   },
-  '68hr-sms-onboard': {
-    type: 'sms', stage: '68 Hours Before Course',
-    title: 'Late Onboarding Nudge SMS',
-    pills: ['Not yet onboarded'],
-    showEmailTemplate: false,
-    smsContent: `Hi [First Name], your Kallibr course starts soon and we can see you haven't logged into your Learner Portal yet.
 
-You must log in now to access your course details.
-
-Login: https://kallibr.app.axcelerate.com/management/management2/rto/[User Login Access Link]
-
-Need help? Call 1300 668 141 or reply to this SMS.`,
-    bullets: [
-      'Course starts soon — student has not yet logged into portal',
-      'Must log in now to access course details',
-      'Need help? Call 1300 668 141 or reply to SMS'
-    ]
-  },
-  '68hr-sms-prelearn': {
-    type: 'sms', stage: '68 Hours Before Course',
-    title: 'Pre-learning SMS',
-    pills: ['Forklift / EWP'],
-    showEmailTemplate: false,
-    smsContent: `Hi [First Name], urgent — pre-learning is mandatory for your Kallibr course. You will NOT receive your completion without it.
-
-Please allow 2-4 hours and complete your modules via your Learner Portal now before Day 1.
-
-Login: https://kallibr.app.axcelerate.com/management/management2/rto/[User Login Access Link]
-
-Questions? Call 1300 668 141 or reply to this SMS.`,
-    bullets: [
-      'Pre-learning mandatory — must be completed before Day 1',
-      'Allow 2-4 hours — complete modules via Learner Portal now',
-      'Questions? Call 1300 668 141 or reply to SMS'
-    ]
-  },
   '68hr-sms-invoice': {
     type: 'sms', stage: '68 Hours Before Course',
     title: 'Invoice Reminder SMS',
     pills: ['COD Only'],
     showEmailTemplate: false,
-    smsContent: `Hi [First Name], your Kallibr Training invoice is due before your course start date. Please pay now to secure your spot.
-
-Pay now: [Payment Link]
+    smsContent: `Hi [First Name], your Kallibr Training invoice is due before your course start date. Please check your email for the invoice.
 
 Questions? Call 1300 668 141 or reply to this SMS.`,
     bullets: [
       'Invoice due before course start date',
-      'Pay now via link to secure spot',
-      'Questions? Call 1300 668 141 or reply to SMS'
+      'Check email for invoice — no payment link in SMS',
+      'Questions? Call 1300 668 141 or reply'
     ]
   },
+
   '48hr-call-payment': {
     type: 'call', stage: '48 Hours Before Course',
     title: 'Payment Call',
@@ -1384,6 +1407,7 @@ Questions? Call 1300 668 141 or reply to this SMS.`,
       'Advise that failure to pay may result in rescheduling'
     ]
   },
+
   '48hr-call-onboard': {
     type: 'call', stage: '48 Hours Before Course',
     title: 'Onboarding Call',
@@ -1396,322 +1420,221 @@ Questions? Call 1300 668 141 or reply to this SMS.`,
       'Ensure student feels ready and confident for Day 1'
     ]
   },
+
   '48hr-call-prelearn': {
     type: 'call', stage: '48 Hours Before Course',
     title: 'Pre-learning Call',
     pills: ['Pre-learning Outstanding'],
     showEmailTemplate: false,
-    bullets: ['Student has not completed mandatory pre-learning — they will not receive completion without it',
-      'Pre-learning is mandatory for course completion — communicate this clearly and urgently',
-      'Remind student to log into portal now and allow 2-4 hours — course starts very soon',
-      'Offer support if student is having trouble accessing the portal']
+    bullets: [
+      'Student has not completed mandatory pre-learning modules',
+      'Pre-learning is mandatory for course completion — communicate urgently',
+      'Remind student to log into portal now and allow 2-4 hours',
+      'Offer support if student is having trouble accessing the portal'
+    ]
   },
+
   'd1-wp11m': {
     type: 'email', stage: 'During Course — Day 1',
-    title: 'EWP Over 11m → EWP Under 11m',
+    title: 'EWP Under 11m Cross-sell',
     pills: ['EWP 11m+ Students', 'All States', 'VIC Coming Soon'],
     showEmailTemplate: false,
-    smsContent: `Hi [First Name], do you also need an EWP Under 11m? Do it tomorrow while you're already here!
-
-Speak to your trainer or book now:
-https://kallibr.com.au/courses/ewp-yellow-card/
-
-VIC students: coming soon — ask your trainer.
-
-Questions? Call 1300 668 141.`,
     emailSubject: `Do you also need an EWP Under 11m? Do it tomorrow`,
-    emailBody: `Hi [First Name],
-
-While you're here — do you also need an EWP Under 11m ticket?
+    emailBody: `Hope your training is going well — do you also need an EWP Under 11m ticket?
 
 You can add it to tomorrow's schedule and get it done without taking more time off work. No extra travel, no extra days away from the job site.
 
-Speak to your trainer today to lock it in, or book directly:
-https://kallibr.com.au/courses/ewp-yellow-card/
+Speak to your trainer today to lock it in.
 
 Note for VIC students: This course is coming to Victoria soon. Register your interest with your trainer today.
 
 Kind Regards,
 Kallibr Training Team
 1300 668 141`,
+    smsContent: `Hi [First Name], hope your training is going well — do you also need an EWP Under 11m ticket? Get it done tomorrow!
+
+Speak to your trainer or call 1300 668 141.
+
+VIC students: coming soon — ask your trainer.`,
     bullets: [
-      'EWP Over 11m students only — cross-sell EWP Under 11m on Day 1',
+      'EWP 11m+ students only — cross-sell EWP Under 11m on Day 1',
       'Add to tomorrow while already on site — no extra travel',
       'All states — VIC students receive coming soon note'
     ]
   },
-  'd2-forklift': {
-    type: 'email', stage: 'During Course — Day 2',
-    title: 'Forklift Upskill',
-    pills: ['Forklift Students', '10% Off Today'],
+
+  'd1-wah': {
+    type: 'email', stage: 'During Course — Day 1',
+    title: 'WAH Ticket Check',
+    pills: ['Rigging Basic Students', 'Day 1'],
     showEmailTemplate: false,
-    smsContent: `Hi [First Name], looking to get more HRW tickets? Ask your trainer today — 10% off when you book now!
+    emailSubject: `Do you have a current Working at Heights ticket?`,
+    emailBody: `Hope your training is going well — quick question while you're here.
 
-Speak to your trainer or book directly:
-https://kallibr.com.au/courses/forklift/
+Do you have a Working at Heights (WAH) ticket? If not, it's one of the most common requirements on job sites and a great one to add while you're in training.
 
-Questions? Call 1300 668 141.`,
-    emailSubject: `Looking to get more tickets? Upskill today and save 10%`,
-    emailBody: `Hi [First Name],
+Already have one? Make sure it's current — WAH tickets expire and an out-of-date ticket can stop you from working on site.
 
-You're already here — it's the perfect time to upskill.
-
-Looking to get more High risk work licence tickets? Ask your trainer today about adding another course. You'll get 10% off when you book during your current course.
-
-More tickets mean more opportunities on the job site.
-
-Speak to your trainer to lock it in, or book directly:
-https://kallibr.com.au/courses/forklift/
+Speak to your trainer today to check or add WAH to your training. Call 1300 668 141 if you need help.
 
 Kind Regards,
 Kallibr Training Team
 1300 668 141`,
+    smsContent: `Hi [First Name], hope your training is going well — do you have a current Working at Heights (WAH) ticket?
+
+If not, or if it's expired, speak to your trainer today about adding it. Call 1300 668 141 if you need help.`,
     bullets: [
-      'Forklift students only — upskill promo on Day 2',
-      'Looking to get more HRW tickets? Ask your trainer — 10% off today',
-      'More tickets mean more opportunities on the job site'
+      'Rigging Basic students only — WAH ticket needs assessment',
+      'Do you have WAH? Is it current? Speak to trainer today',
+      'WAH tickets expire — out-of-date can stop site work'
     ]
   },
+
+  'd2-forklift': {
+    type: 'email', stage: 'During Course — Day 2',
+    title: 'Forklift — Generic HRW Upsell',
+    pills: ['Forklift Students', 'Day 2', '10% Off Today'],
+    showEmailTemplate: false,
+    emailSubject: `Looking to get more HRW tickets? 10% off today`,
+    emailBody: `Hope your training is going well — looking to get more High Risk Work Licence tickets?
+
+Ask your trainer today about adding another course. You'll get 10% off when you book during your current course.
+
+More tickets mean more opportunities on the job site.
+
+Kind Regards,
+Kallibr Training Team
+1300 668 141`,
+    smsContent: `Hi [First Name], hope your training is going well — looking to get more HRW tickets? Ask your trainer today — 10% off when you book now! Call 1300 668 141.`,
+    bullets: [
+      'Forklift students only — generic HRW upsell on Day 2',
+      '10% off any additional course booked today',
+      'Ask your trainer — more tickets mean more job site opportunities'
+    ]
+  },
+
   'd3-dogging-rb': {
     type: 'email', stage: 'During Course — Day 3',
     title: 'Dogging → RB Basic',
-    pills: ['Dogging Students', '10% Off Today'],
+    pills: ['Dogging Students', 'Day 3 of 5', '10% Off Today'],
     showEmailTemplate: false,
-    smsContent: `Hi [First Name], you're doing Dogging — the perfect next step is Rigging Basic (RB Licence). Book today and get 10% off!
-
-Speak to your trainer or book now:
-https://kallibr.com.au/courses/basic-rigging-rb-licence/
-
-Questions? Call 1300 668 141.`,
     emailSubject: `You're doing Dogging — add Rigging Basic and save 10%`,
-    emailBody: `Hi [First Name],
-
-You're doing Dogging — the perfect next step is Rigging Basic (RB Licence).
+    emailBody: `Hope your training is going well — the perfect next step after Dogging is Rigging Basic (RB Licence).
 
 RB expands your dogging skills and qualifies you for more complex rigging tasks including hoists, safety lines, steel erections and precast members. More tickets mean more opportunities on the job site.
 
-Book today and get 10% off — speak to your trainer or book directly:
-https://kallibr.com.au/courses/basic-rigging-rb-licence/
-
-Questions? Call 1300 668 141.
+Book today and get 10% off — speak to your trainer to lock it in.
 
 Kind Regards,
 Kallibr Training Team
 1300 668 141`,
+    smsContent: `Hi [First Name], hope your training is going well — the perfect next step after Dogging is Rigging Basic. Book today and get 10% off! Speak to your trainer or call 1300 668 141.`,
     bullets: [
-      'Dogging students only — promote RB Basic on Day 3',
+      'Dogging students only — RB Basic promo on Day 3',
       'RB expands dogging skills — hoists, safety lines, steel erections',
-      '10% off when booked today — speak to trainer or book direct'
+      '10% off when booked today — speak to trainer to lock in'
     ]
   },
-  'd3-dogging-hrw': {
-    type: 'email', stage: 'During Course — Day 3',
-    title: 'Dogging — Generic HRW Upsell',
-    pills: ['Dogging Students'],
-    showEmailTemplate: false,
-    smsContent: `Hi [First Name], looking to get more HRW tickets? Ask your trainer today — 10% off when you book now!
 
-Call 1300 668 141 or view courses here:
-https://kallibr.com.au/courses/`,
-    emailSubject: `You're doing Dogging — looking to expand your HRW skills?`,
-    emailBody: `Hi [First Name],
-
-You're already here — it's the perfect time to expand your skills.
-
-Looking to get more High Risk Work Licence tickets? Ask your trainer today about adding another course. You'll get 10% off when you book during your current course.
-
-More tickets mean more opportunities on the job site.
-
-View all available courses and book directly:
-https://kallibr.com.au/courses/
-
-Or call us on 1300 668 141.
-
-Kind Regards,
-Kallibr Training Team
-1300 668 141`,
-    bullets: [
-      'Dogging students — generic HRW upsell on Day 3',
-      '10% off any additional course booked today',
-      'View all courses at kallibr.com.au/courses/'
-    ]
-  },
   'd3-rigging-basic': {
     type: 'email', stage: 'During Course — Day 3',
     title: 'Rigging Basic — HRW Upsell',
-    pills: ['Rigging Basic Students'],
+    pills: ['Rigging Basic Students', 'Day 3'],
     showEmailTemplate: false,
-    smsContent: `Hi [First Name], looking to get more HRW tickets? Ask your trainer today — 10% off when you book now!
-
-Call 1300 668 141 or view courses here:
-https://kallibr.com.au/courses/`,
     emailSubject: `You're doing Rigging Basic — looking to get more HRW tickets?`,
-    emailBody: `Hi [First Name],
+    emailBody: `Hope your training is going well — looking to get more High Risk Work Licence tickets?
 
-You're already here — it's the perfect time to expand your skills.
-
-Looking to get more High Risk Work Licence tickets? Ask your trainer today about adding another course. You'll get 10% off when you book during your current course.
+Ask your trainer today about adding another course. You'll get 10% off when you book during your current course.
 
 More tickets mean more opportunities on the job site.
-
-View all available courses and book directly:
-https://kallibr.com.au/courses/
-
-Or call us on 1300 668 141.
 
 Kind Regards,
 Kallibr Training Team
 1300 668 141`,
+    smsContent: `Hi [First Name], hope your training is going well — looking to get more HRW tickets? Ask your trainer today — 10% off when you book now! Call 1300 668 141.`,
     bullets: [
       'Rigging Basic students — generic HRW upsell on Day 3',
       '10% off any additional course booked today',
-      'View all courses at kallibr.com.au/courses/'
+      'Ask your trainer — more tickets mean more job site opportunities'
     ]
   },
+
   'd3-rigging-int': {
     type: 'email', stage: 'During Course — Day 3',
     title: 'Rigging Intermediate — HRW Upsell',
-    pills: ['Rigging Intermediate Students'],
+    pills: ['Rigging Intermediate Students', 'Day 3'],
     showEmailTemplate: false,
-    smsContent: `Hi [First Name], looking to get more HRW tickets? Ask your trainer today — 10% off when you book now!
-
-Call 1300 668 141 or view courses here:
-https://kallibr.com.au/courses/`,
     emailSubject: `You're doing Rigging Intermediate — looking to get more HRW tickets?`,
-    emailBody: `Hi [First Name],
+    emailBody: `Hope your training is going well — looking to get more High Risk Work Licence tickets?
 
-You're already here — it's the perfect time to expand your skills.
-
-Looking to get more High Risk Work Licence tickets? Ask your trainer today about adding another course. You'll get 10% off when you book during your current course.
+Ask your trainer today about adding another course. You'll get 10% off when you book during your current course.
 
 More tickets mean more opportunities on the job site.
-
-View all available courses and book directly:
-https://kallibr.com.au/courses/
-
-Or call us on 1300 668 141.
 
 Kind Regards,
 Kallibr Training Team
 1300 668 141`,
+    smsContent: `Hi [First Name], hope your training is going well — looking to get more HRW tickets? Ask your trainer today — 10% off when you book now! Call 1300 668 141.`,
     bullets: [
       'Rigging Intermediate students — generic HRW upsell on Day 3',
       '10% off any additional course booked today',
-      'View all courses at kallibr.com.au/courses/'
+      'Ask your trainer — more tickets mean more job site opportunities'
     ]
   },
+
   'd3-rigging-adv': {
     type: 'email', stage: 'During Course — Day 3',
     title: 'Rigging Advanced — HRW Upsell',
-    pills: ['Rigging Advanced Students'],
+    pills: ['Rigging Advanced Students', 'Day 3'],
     showEmailTemplate: false,
-    smsContent: `Hi [First Name], looking to get more HRW tickets? Ask your trainer today — 10% off when you book now!
-
-Call 1300 668 141 or view courses here:
-https://kallibr.com.au/courses/`,
     emailSubject: `You're doing Rigging Advanced — looking to get more HRW tickets?`,
-    emailBody: `Hi [First Name],
+    emailBody: `Hope your training is going well — looking to get more High Risk Work Licence tickets?
 
-You're already here — it's the perfect time to expand your skills.
-
-Looking to get more High Risk Work Licence tickets? Ask your trainer today about adding another course. You'll get 10% off when you book during your current course.
+Ask your trainer today about adding another course. You'll get 10% off when you book during your current course.
 
 More tickets mean more opportunities on the job site.
-
-View all available courses and book directly:
-https://kallibr.com.au/courses/
-
-Or call us on 1300 668 141.
 
 Kind Regards,
 Kallibr Training Team
 1300 668 141`,
+    smsContent: `Hi [First Name], hope your training is going well — looking to get more HRW tickets? Ask your trainer today — 10% off when you book now! Call 1300 668 141.`,
     bullets: [
       'Rigging Advanced students — generic HRW upsell on Day 3',
       '10% off any additional course booked today',
-      'View all courses at kallibr.com.au/courses/'
+      'Ask your trainer — more tickets mean more job site opportunities'
     ]
   },
-  'd3-gantry': {
-    type: 'email', stage: 'During Course — Day 3',
-    title: 'Gantry Crane — HRW Upsell',
-    pills: ['Gantry Crane Students'],
-    showEmailTemplate: false,
-    smsContent: `Hi [First Name], looking to get more HRW tickets? Ask your trainer today — 10% off when you book now!
 
-Call 1300 668 141 or view courses here:
-https://kallibr.com.au/courses/`,
-    emailSubject: `You're doing Gantry Crane — looking to get more HRW tickets?`,
-    emailBody: `Hi [First Name],
-
-You're already here — it's the perfect time to expand your skills.
-
-Looking to get more High Risk Work Licence tickets? Ask your trainer today about adding another course. You'll get 10% off when you book during your current course.
-
-More tickets mean more opportunities on the job site.
-
-View all available courses and book directly:
-https://kallibr.com.au/courses/
-
-Or call us on 1300 668 141.
-
-Kind Regards,
-Kallibr Training Team
-1300 668 141`,
-    bullets: [
-      'Gantry Crane students — generic HRW upsell on Day 3',
-      '10% off any additional course booked today',
-      'View all courses at kallibr.com.au/courses/'
-    ]
-  },
   'd3-c6': {
     type: 'email', stage: 'During Course — Day 3',
     title: 'C6 Mobile Crane — HRW Upsell',
-    pills: ['C6 Mobile Crane Students'],
+    pills: ['C6 Mobile Crane Students', 'Day 3'],
     showEmailTemplate: false,
-    smsContent: `Hi [First Name], looking to get more HRW tickets? Ask your trainer today — 10% off when you book now!
-
-Call 1300 668 141 or view courses here:
-https://kallibr.com.au/courses/`,
     emailSubject: `You're doing C6 Mobile Crane — looking to get more HRW tickets?`,
-    emailBody: `Hi [First Name],
+    emailBody: `Hope your training is going well — looking to get more High Risk Work Licence tickets?
 
-You're already here — it's the perfect time to expand your skills.
-
-Looking to get more High Risk Work Licence tickets? Ask your trainer today about adding another course. You'll get 10% off when you book during your current course.
+Ask your trainer today about adding another course. You'll get 10% off when you book during your current course.
 
 More tickets mean more opportunities on the job site.
-
-View all available courses and book directly:
-https://kallibr.com.au/courses/
-
-Or call us on 1300 668 141.
 
 Kind Regards,
 Kallibr Training Team
 1300 668 141`,
+    smsContent: `Hi [First Name], hope your training is going well — looking to get more HRW tickets? Ask your trainer today — 10% off when you book now! Call 1300 668 141.`,
     bullets: [
       'C6 Mobile Crane students — generic HRW upsell on Day 3',
       '10% off any additional course booked today',
-      'View all courses at kallibr.com.au/courses/'
+      'Ask your trainer — more tickets mean more job site opportunities'
     ]
   },
+
   'voc': {
     type: 'sms', stage: 'VOC & Completion',
     title: 'VOC Check',
-    pills: ['SMS + Portal Announcement', 'Day before last course day'],
+    pills: ['SMS + Email + Portal Announcement', 'Day of send TBC'],
     showEmailTemplate: false,
-    smsContent: `Hi [First Name], your Kallibr Training course is almost complete — well done!
-
-Have you organised your VOC (verification of competency)? Speak to your trainer today or purchase via your Learner Portal.
-
-Portal: https://kallibr.app.axcelerate.com/management/management2/rto/[User Login Access Link]
-
-Questions? Ask at the desk or call 1300 668 141.`,
     emailSubject: `Your course is almost complete — have you organised your VOC?`,
-    emailBody: `Hi [First Name],
-
-Congratulations — your Kallibr Training course is almost complete!
+    emailBody: `Congratulations — your Kallibr Training course is almost complete!
 
 Before you finish up, there is one important step remaining: your Verification of Competency (VOC).
 
@@ -1719,10 +1642,8 @@ Your VOC is required to confirm your competency and issue your completion certif
 
 How to organise your VOC:
 • Speak to your trainer today — they can arrange it before your last day
-• Purchase via your Learner Portal using the link below
+• Purchase via your Learner Portal: [User Login Access Link Text]
 • Ask at the reception desk before you leave
-
-Portal: https://kallibr.app.axcelerate.com/management/management2/rto/[User Login Access Link]
 
 Please do not leave without organising this — your trainer is available today to help.
 
@@ -1730,12 +1651,21 @@ Well done on completing your training. We look forward to issuing your completio
 
 Kind Regards,
 Kallibr Customer Service Team
-customerservice@kallibr.com.au
-1300 668 141`,
-    bullets: ['VOC is required to finalise course and receive completion certificate',
-      'Speak to trainer today, purchase via Learner Portal, or ask at reception',
-      'Sent as SMS + Email + aX Portal Announcement the day before last course day']
-  },
+customerservice@kallibr.com.au | 1300 668 141`,
+    smsContent: `Hi [First Name], your Kallibr Training course is almost complete — well done!
+
+Have you organised your VOC (verification of competency)? Speak to your trainer today or ask at the reception desk.
+
+Login: [User Login Access Link Text]
+
+Questions? Call 1300 668 141.`,
+    bullets: [
+      'VOC is required to finalise course and receive completion certificate',
+      'Speak to trainer, purchase via portal, or ask at reception',
+      'Day of send TBC — SMS + Email + aX Portal Announcement'
+    ]
+  }
+
 };
 const emailTemplate = `
 <div class="email-preview">
@@ -1752,27 +1682,26 @@ const emailTemplate = `
   </div>
   <div class="email-body">
     <p>Dear [Trainee Given Name],</p>
-    <p>Thank you for choosing Kallibr Training.</p>
-    <p class="em-bold">IMPORTANT: Complete your pre-course steps (2 mins)</p>
-    <p>Before attending, please access your <strong>Learner Portal</strong> to:</p>
+    <p>Your booking is confirmed.</p>
+    <p class="em-bold">IMPORTANT: You must log into your Learner Portal before your course.</p>
+    <p>Your Learner Portal is where you will find everything you need to prepare:</p>
     <ul>
-      <li>Confirm your details</li>
-      <li>Upload any required information</li>
-      <li>Review course requirements</li>
-      <li>You will need to onboard for every course you enrol in</li>
+      <li>Course details and schedule</li>
+      <li>What to bring on the day</li>
+      <li>Onboarding steps — you must complete these before Day 1</li>
     </ul>
-    <p>Access your portal here: <a href="#">[User Login Access Link Text]</a></p>
-    <p>Here are your <strong>course details</strong> outlined below:</p>
+    <p>You must onboard for every course you enrol in, even if you have used the portal before.</p>
+    <p>Login here: <a href="#">[User Login Access Link Text]</a></p>
     <table class="email-table">
       <tr><td>Booking Contact</td><td>[Requested By Full Name] ([Trainee Organisation])</td></tr>
       <tr><td>Participant</td><td>[Trainee Full Name]</td></tr>
-      <tr><td>Course</td><td>[Workshop Name] <strong>Pre-learning is required</strong></td></tr>
+      <tr><td>Course</td><td>[Workshop Name]</td></tr>
       <tr><td>Units &amp; Description</td><td>[Workshop Type Short Description]</td></tr>
       <tr><td>Learning Method</td><td>[Workshop Type Learning Methods]</td></tr>
       <tr><td>Date(s) &amp; Time(s)</td><td>[Complex Date] | [Start Time] | [Finish Time]</td></tr>
       <tr><td>Location</td><td>[Workshop Venue Organisation], [Street Address], [Suburb], [State] [Postcode]</td></tr>
     </table>
-    <p>Thank you for choosing Kallibr Training. We hope you enjoy the training and look forward to seeing you. If you have any further questions, please contact us.</p>
+    <p>Thank you for choosing Kallibr Training. We look forward to seeing you.</p>
     <div class="email-sign">
       <strong>Kallibr Customer Service Team</strong>
       customerservice@kallibr.com.au | 1300 668 141
@@ -1800,9 +1729,9 @@ function showOverlay(id) {
   const emailHtml = d.emailBody ? `
     <div class="overlay-sms-block" style="margin-top:12px;">
       <div class="overlay-sms-label" style="color:#93C5FD;">✉️ Full Email — Copy &amp; Paste into Email Tool</div>
-      <div style="font-size:10px;color:#9CA3AF;margin-bottom:6px;font-weight:600;">Subject: ${d.emailSubject}</div>
+      <div style="font-size:10px;color:#9CA3AF;margin-bottom:6px;font-weight:600;">Subject: ${d.emailSubject || ''}</div>
       <div class="overlay-sms-text" id="email-text-${id}">${d.emailBody.replace(/\n/g, '<br>')}</div>
-      <button class="overlay-copy-btn" style="background:#2563EB;" onclick="copySms('email-text-${id}', this)">Copy Email</button>
+      <button class="overlay-copy-btn" style="background:#2563EB;margin-top:6px;" onclick="copySms('email-text-${id}', this)">Copy Email</button>
     </div>` : '';
   document.getElementById('overlay-content').innerHTML = `
     <div class="overlay-badge ${d.type}">${typeLabel === 'Call' ? '📞' : typeLabel === 'Email' ? '✉️' : '💬'} ${typeLabel}</div>
@@ -1831,10 +1760,11 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') hideOverlay(
 function copySms(elId, btn) {
   const el = document.getElementById(elId);
   const text = el.innerText;
+  const label = btn.textContent;
   navigator.clipboard.writeText(text).then(() => {
     btn.textContent = '✅ Copied!';
     btn.style.background = '#059669';
-    setTimeout(() => { btn.textContent = btn.textContent.includes('SMS') ? 'Copy SMS' : 'Copy Email'; btn.style.background = ''; }, 2000);
+    setTimeout(() => { btn.textContent = label; btn.style.background = ''; }, 2000);
   }).catch(() => {
     const ta = document.createElement('textarea');
     ta.value = text;
@@ -1843,7 +1773,7 @@ function copySms(elId, btn) {
     document.execCommand('copy');
     document.body.removeChild(ta);
     btn.textContent = '✅ Copied!';
-    setTimeout(() => { btn.textContent = btn.textContent.includes('SMS') ? 'Copy SMS' : 'Copy Email'; btn.style.background = ''; }, 2000);
+    setTimeout(() => { btn.textContent = label; btn.style.background = ''; }, 2000);
   });
 }
 </script>
